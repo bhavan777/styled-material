@@ -2,6 +2,9 @@
   "name": "material",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+      "build": "webpack --module-bind 'js=babel' src/main.js bundle.js"
+  },
   "repository": {},
   "author": "bhavan kuchibhotla",
   "license": "MIT",
@@ -11,9 +14,16 @@
     "styled-components": "^1.4.3"
   },
   "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
     "babel-cli": "^6.22.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
-    "express": "^4.14.1"
+    "react-redux": "^5.0.1",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0",
+    "express": "^4.14.1",
+    "standard": "^8.6.0",
+    "webpack": "^2.2.1"
   }
 }
